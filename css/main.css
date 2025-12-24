@@ -905,67 +905,38 @@ ul li:first-child {
   }
   .skills__wraapper {
     grid-template-columns: repeat(2, 50%);
-    gap: 30px;
+    
   }
   .skills__item  {
     padding: 20px;
   }
-  .skills__wraapper :nth-child(3){
-    align-content: flex-end;
-  }
   .skills-row {
-    padding-top: 30px;
+    grid-row: none;
+    order: 1;
   }
   .skills-col {
-    gap: 0
+    flex-direction: column;
+    justify-content: space-between;
   }
   .col-flex-r {
-    width: 120%;
-  }
-  .col-flex-r > button {
-    padding: 14px 42px;
-    font-size: 16px;
-  }
-  .col-flex-r > h3 {
-    font-size: 20px;
-  }    
-  .skills-img {
-    margin-bottom: 20px;
-  }
-  .skills-img-2 {
-    margin: 0 auto;
-  }
-  .skills__item > h3 {
-    font-size: 20px;
-  }
-
-  .skiils__txt {
-    font-size: 13px;
-    margin-bottom: 20px;
-  }
-  .skills__item > button {
-    padding: 16px 42px;
-    font-size: 16px;
+    width: 105%;
   }
 
   /* About */
 
-  .about {
-    padding-bottom: 100px;
-  }
   .about__wrapper {
-    grid-template-columns: repeat(2, 60% 40%);
+    grid-template-columns: repeat(1, 100%);
     gap: 37px;
   }  
   .about__wrapper-content {
-    gap: 40px;
+    text-align: center;
+    margin: 0 auto;
   }
   .about__content > h2 {
     font-size: 30px;
   }
   .about-txt {
-    font-size: 14px;
-    max-width: 350px;
+    width: 100%;
   }
   .info-num {
     text-align: center;
@@ -977,7 +948,9 @@ ul li:first-child {
     font-size: 13px;
   }
   .about__wrapper-img {
-    align-content: end;
+    grid-row: 1;
+    max-width: 352px;
+    margin: 0 auto;
   }
 
   /* pricing */
